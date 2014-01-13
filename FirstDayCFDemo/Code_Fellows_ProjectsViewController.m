@@ -10,6 +10,8 @@
 
 @interface Code_Fellows_ProjectsViewController ()
 
+@property (strong, nonatomic) IBOutlet UITableView *MyTableView;
+
 @end
 
 @implementation Code_Fellows_ProjectsViewController
@@ -18,7 +20,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *student1 = (@"Brad");
+    NSString *student2 = ("@Tim");
+
+  
+  
+    self.MyTableView.delegate = self;
+    self.MyTableView.dataSource = self;
 }
+               
+- NSInteger (numberofrowsinsections)
+## Count how many students are in array, and return
 
 - (void)didReceiveMemoryWarning
 {

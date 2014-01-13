@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Code_Fellows_ProjectsViewController : UIViewController
+@interface Code_Fellows_ProjectsViewController : UIViewController UITableViewDelegate, UITableViewDataSource
 
 @end
